@@ -1,0 +1,20 @@
+{
+  "name": "pandaJuice",
+  "description": "pandaJuice",
+  "main": "server/server.js",
+  "authors": [
+    "Brian Ethier <davidbrianethier@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client/vendor",
+    "test",
+    "tests"
+  ]
+}
