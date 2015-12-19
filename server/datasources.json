@@ -1,7 +1,11 @@
 {
   "db": {
-    "name": "db",
-    "connector": "memory",
-    "file": "db.json"
+    "host": "localhost",
+    "port": "5432",
+    "database": "panda_juice_dev",
+    "username": "postgres",
+    "name": "postgres",
+    "debug": true,
+    "connector": "postgresql"
   }
 }
