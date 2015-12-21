@@ -1,0 +1,41 @@
+{
+  "name": "SaleItem",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "saleId": {
+      "type": "number",
+      "required": true
+    },
+    "itemId": {
+      "type": "number",
+      "required": true
+    },
+    "quantity": {
+      "type": "number",
+      "required": true
+    },
+    "cost": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "sale": {
+      "type": "belongsTo",
+      "model": "Sale",
+      "foreignKey": ""
+    },
+    "item": {
+      "type": "belongsTo",
+      "model": "Item",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

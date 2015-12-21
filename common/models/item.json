@@ -15,7 +15,14 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "sales": {
+      "type": "hasMany",
+      "model": "Sale",
+      "foreignKey": "itemId",
+      "through": "SaleItem"
+    }
+  },
   "acls": [],
   "methods": {}
 }

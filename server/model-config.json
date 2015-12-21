@@ -39,5 +39,9 @@
   "Item": {
     "dataSource": "db",
     "public": true
+  },
+  "SaleItem": {
+    "dataSource": "db",
+    "public": true
   }
 }

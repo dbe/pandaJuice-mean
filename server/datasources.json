@@ -4,7 +4,7 @@
     "port": "5432",
     "database": "panda_juice_dev",
     "username": "postgres",
-    "name": "postgres",
+    "name": "db",
     "debug": true,
     "connector": "postgresql"
   }
