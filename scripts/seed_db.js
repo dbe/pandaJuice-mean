@@ -1,5 +1,6 @@
-var app = require('../server/server');
+//var Promise = require('bluebird');
 
+var app = require('../server/server');
 var datasource = app.datasources.db;
 
 var models = app.models();
@@ -35,4 +36,3 @@ function seedData() {
     console.log("User created: ", user);
   });
 }
-
