@@ -13,11 +13,20 @@
   </head>
 
   <body ng-controller="rootController">
-    {{ "Angular works" }}
-    <br>
-    2 + 2 = {{ 2 + 2 }}
-    <br>
-    {{ oreo }}
+    <div ng-show="!user">
+      <label>Username</label><input ng-model="email">
+      <label>Password</label><input ng-model="password">
+      <input type="submit" value="Login" ng-click="login(email, password)">
+    </div>
+    <div ng-show="user">
+      <p>User's Email: {{ user.email }}</p>
+      <p>Username: {{ user.username }}</p>
+      <p>
+        <label>Change Username</label>
+        <input ng-model="username">
+        <input type="submit" value="Set" ng-click="setUsername(username)">
+      </p>
+    </div>
   </body>
 
 </html>
