@@ -13,14 +13,14 @@
   </head>
 
   <body ng-controller="rootController">
-    <div ng-show="!user">
-      <label>Username</label><input ng-model="email">
+    <div ng-show="!customer">
+      <label>Email</label><input ng-model="email">
       <label>Password</label><input ng-model="password">
       <input type="submit" value="Login" ng-click="login(email, password)">
     </div>
-    <div ng-show="user">
-      <p>User's Email: {{ user.email }}</p>
-      <p>Username: {{ user.username }}</p>
+    <div ng-show="customer">
+      <p>User's Email: {{ customer.email }}</p>
+      <p>Username: {{ customer.username }}</p>
       <p>
         <label>Change Username</label>
         <input ng-model="username">
