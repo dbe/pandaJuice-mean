@@ -31,8 +31,8 @@ function seedData() {
     });
   });
 
-  var User = app.models.User;
-  User.create({email: "admin@pandaJuice.com", password: "fossil"}, function(err, user) {
-    console.log("User created: ", user);
+  var Customer = app.models.Customer;
+  Customer.create({email: "admin@pandaJuice.com", password: "fossil", firstname: "Brian", lastname: "Ethier"}, function(err, cust) {
+    console.log("Customer created: ", cust);
   });
 }
